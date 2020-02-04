@@ -1,13 +1,15 @@
 /**
+ *
  * 04/02/2020
- * classe_damier.js 
- * damier sous forme de classe
+ * classe_damuier_moderne.py 
+ * manière plus moderne pour faire une classe avec constructeur 
  *
  */
 
-(function() {
-	'use strict';
-	let CDamier = function(destination,hauteur,largeur) {
+'use strict';
+class Damier{
+
+	constructor(destination,hauteur,largeur) {
 		let css_black =  {
 			'display'	   : 'inline-block',
 			'background-color' : 'black',
@@ -57,10 +59,11 @@
 
 		}
 	}
-
+}
+(function() {
 	$(document).ready(function() {
-			
-		new CDamier("#damier", 10 , 10)
+		"use strict";	
+		new Damier("#damier", 10 , 10)
 
 	});
 }) ();
